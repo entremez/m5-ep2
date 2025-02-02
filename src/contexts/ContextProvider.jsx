@@ -1,4 +1,5 @@
 import { createContext, useState, useContext } from 'react';
+import jwt from 'jsonwebtoken';
 
 const StateContext = createContext({
     user: null,
@@ -9,6 +10,7 @@ const StateContext = createContext({
 
 
 
+
 export const ContextProvider = ({ children }) => {
 
     const [user, setUser] = useState(useState(localStorage.getItem('USER')));
@@ -16,6 +18,8 @@ export const ContextProvider = ({ children }) => {
     
 
     const setToken = (token) => {
+        console.log(token);
+
         _setToken(token);
         if (token) {
             localStorage.setItem('ACCESS_TOKEN', token);

@@ -1,0 +1,22 @@
+[
+    {
+      "code" : "01",
+      "display" : "Anatomía Patológica"
+    },
+    {
+      "code" : "02",
+      "display" : "Anestesiología"
+    },
+    {
+      "code" : "03",
+      "display" : "Cardiología"
+    },
+    {
+      "code" : "04",
+      "display" : "Cirugía General"
+    },
+    {
+      "code" : "05",
+      "display" : "Cirugía de Cabeza, Cuello y Maxilofacial"
+    }
+  ]
